@@ -1,0 +1,69 @@
+0(1)- constant time
+0(n2) - Quadratic time
+0(n!) or 0(2n) - expotential or factorial
+o(log n) - Logarithm time
+o(log n) - Logarithm time(binary search)
+o(log n) - Logarithm time 
+0(n2) - quad time
+
+
+answers
+
+✅ 1. funcA
+Your answer: O(1) - constant time
+Correct answer: O(n) – linear time
+
+❌ This is incorrect. The function may have to check every item before finding 0 or returning False. That’s worst-case linear time, not constant.
+
+✅ Correct answer: O(n)
+
+✅ 2. funcB
+Your answer: O(n²) – Quadratic time
+Correct answer: O(n³) – Cubic time
+
+❌ It’s a triple nested loop, not double. So this is cubic time, not quadratic.
+
+✅ Correct answer: O(n³)
+
+✅ 3. funcC
+Your answer: O(n!) or O(2ⁿ) – Exponential or Factorial
+Correct answer: O(2ⁿ) – Exponential time
+
+🔶 You guessed both O(n!) and O(2ⁿ), but only O(2ⁿ) is right here.
+
+The function branches twice per call, so it grows exponentially like 2^n.
+
+✅ Correct answer: O(2ⁿ)
+
+✅ 4. funcD
+Your answer: O(log n) – Logarithmic
+Correct answer: O(1) – Constant time
+
+❌ It just finds the middle index once and prints it. No loops, no recursion. That’s constant time.
+
+✅ Correct answer: O(1)
+
+✅ 5. funcE
+Your answer: O(log n)
+Correct answer: O(log n) – Logarithmic
+
+✅ Correct! This is classic binary search, which halves the input each time.
+
+✅ Correct answer: O(log n)
+
+✅ 6. funcF
+Your answer: O(log n)
+Correct answer: O(n log n)
+
+❌ Outer loop runs n times, and inner loop does log n operations → total = n * log n.
+
+✅ Correct answer: O(n log n)
+
+✅ 7. funcG
+Your answer: O(n²)
+Correct answer: O(n)
+
+❌ Inner loop runs only 5 times, which is a constant, so time complexity is just O(n * 5) = O(n)
+
+✅ Correct answer: O(n)
+
